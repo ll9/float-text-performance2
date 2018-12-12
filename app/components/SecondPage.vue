@@ -2,11 +2,36 @@
   <Page>
     <ActionBar title="Welcome to NativeScript-Vue!"/>
     <ScrollView>
-        <ListView for="item in arr">
-          <v-template>
-            <FloatText :keyboardType="item % 2 == 0 ? 'number': 'url'" :hint="item"/>
-          </v-template>
-        </ListView>
+      <StackLayout>
+        <StackLayout>
+          <ListView for="item in arr">
+            <v-template>
+              <FloatText :keyboardType="item % 2 == 0 ? 'number': 'url'" :hint="item"/>
+            </v-template>
+          </ListView>
+        </StackLayout>
+        <StackLayout>
+          <ListView for="item in arr">
+            <v-template>
+              <FloatText :keyboardType="item % 2 == 0 ? 'number': 'url'" :hint="item"/>
+            </v-template>
+          </ListView>
+        </StackLayout>
+        <StackLayout>
+          <ListView for="item in arr">
+            <v-template>
+              <FloatText :keyboardType="item % 2 == 0 ? 'number': 'url'" :hint="item"/>
+            </v-template>
+          </ListView>
+        </StackLayout>
+        <StackLayout>
+          <ListView for="item in arr">
+            <v-template>
+              <FloatText :keyboardType="item % 2 == 0 ? 'number': 'url'" :hint="item"/>
+            </v-template>
+          </ListView>
+        </StackLayout>
+      </StackLayout>
     </ScrollView>
   </Page>
 </template>
@@ -17,7 +42,7 @@ import FloatText from "./sub/FloatText";
 export default {
   data() {
     return {
-      arr: Array.from(Array(40).keys()),
+      arr: Array.from(Array(10).keys()),
       msg: "Hello World!"
     };
   },
