@@ -2,9 +2,40 @@
   <Page>
     <ActionBar title="Welcome to NativeScript-Vue!"/>
     <ScrollView>
+      <StackLayout>
         <StackLayout>
-            <FloatText v-for="item in 40" :key="item" :keyboardType="item % 2 == 0 ? 'number': 'url'" :hint="item"/>
+          <FloatText
+            v-for="item in 10"
+            :key="item"
+            :keyboardType="item % 2 == 0 ? 'number': 'url'"
+            :hint="item"
+          />
         </StackLayout>
+        <StackLayout>
+          <FloatText
+            v-for="item in 10"
+            :key="item"
+            :keyboardType="item % 2 == 0 ? 'number': 'url'"
+            :hint="item"
+          />
+        </StackLayout>
+        <StackLayout>
+          <FloatText
+            v-for="item in 10"
+            :key="item"
+            :keyboardType="item % 2 == 0 ? 'number': 'url'"
+            :hint="item"
+          />
+        </StackLayout>
+        <StackLayout>
+          <FloatText
+            v-for="item in 10"
+            :key="item"
+            :keyboardType="item % 2 == 0 ? 'number': 'url'"
+            :hint="item"
+          />
+        </StackLayout>
+      </StackLayout>
     </ScrollView>
   </Page>
 </template>
