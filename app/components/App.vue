@@ -2,6 +2,7 @@
     <Page>
         <ActionBar title="Welcome to NativeScript-Vue!"/>
         <StackLayout columns="*" rows="*">
+            <WebView src="https://openlayers.org/en/latest/examples/cluster.html" style="height: 50%" />
             <Button text="nav" @tap="nav" />
         </StackLayout>
     </Page>
