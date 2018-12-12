@@ -2,11 +2,9 @@
   <Page>
     <ActionBar title="Welcome to NativeScript-Vue!"/>
     <ScrollView>
-        <ListView for="item in arr">
-          <v-template>
-            <FloatText :keyboardType="item % 2 == 0 ? 'number': 'url'" :hint="item"/>
-          </v-template>
-        </ListView>
+        <StackLayout>
+            <FloatText v-for="item in 40" :key="item" :keyboardType="item % 2 == 0 ? 'number': 'url'" :hint="item"/>
+        </StackLayout>
     </ScrollView>
   </Page>
 </template>
